@@ -1,7 +1,6 @@
 h1 {
 	font-family: 'IBM Plex Serif', serif;
 	font-size: 32px;
-	font-style: normal;
 	color: var(--rich-black);
 	margin-top: 8px;
 	margin-bottom: 56px;
@@ -11,7 +10,6 @@ h1 {
 h2 {
 	font-family: 'IBM Plex Serif', serif;
 	font-size: 24px;
-	font-style: normal;
 	color: white;
 	font-weight: 400;
 	margin-bottom: 24px;
@@ -25,7 +23,6 @@ a:-webkit-any-link {
 h3 {
 	font-family: 'IBM Plex Mono', monospace;
 	font-size: 16px;
-	font-style: normal;
 	color: var(--rich-black);
 	font-weight: 400;
 	text-decoration: none;
@@ -35,7 +32,6 @@ h3 {
 h4 {
 	font-family: 'IBM Plex Mono', monospace;
 	font-size: 14px;
-	font-style: normal;
 	text-transform: uppercase;
 	color: var(--rich-black);
 	font-weight: 400;
@@ -54,7 +50,6 @@ h4 {
 h6 {
 	font-family: 'IBM Plex Sans', sans-serif;
 	font-size: 1em;
-	font-style: normal;
 	color: var(--rich-black);
 	font-weight: 400;
 /*	font-style: italic;*/
@@ -68,7 +63,6 @@ h6 {
 p {
 	font-family: 'IBM Plex Serif', serif;
 	font-size: 14px;
-	font-style: normal;
 	color: var(--rich-black);
 	line-height: 24px;
 
@@ -104,6 +98,18 @@ body {
 	font-weight: 400;
 	margin-top: 32px;
 	margin-bottom: 32px;
+	grid-column: 1/span 12;
+
+
+}
+
+#pic-copyright {
+		font-family: 'IBM Plex Mono', monospace;
+	text-align: center;
+	color: var(--light-gray);
+	font-weight: 400;
+	margin-top: 16px;
+	margin-bottom: 40px;
 	grid-column: 1/span 12;
 
 
@@ -498,6 +504,26 @@ margin-bottom: 32px;
 	}
 
 
+/*---*/
+
+.carousel-link {
+	grid-column: 4/span 7;
+	height: auto;
+}
+
+#carousel-link {
+	width: 40px;
+	/* position: absolute; */
+	display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 64px;
+margin-bottom: 32px;
+}
+
+
+
+
 .tide-video {
 	grid-column: 3/span 8;
 	grid-row: 4/span 8;
@@ -693,7 +719,7 @@ img {
 #interventions{
 
 	background-color: var(--interventions);
-	cursor: url("images/coming-soon.png"), auto;
+
 }
 
 #video{
@@ -1122,7 +1148,7 @@ filter: drop-shadow(0px 4px 24px rgba(45, 45, 45, 0.15));
 	.tide-video {
 		grid-column: 2/span 10;
     grid-row: 1/span 3;
-    margin-top: 20%;
+    margin-top: 5%;
     height: 360;
     z-index: 90;
     filter: drop-shadow(0 px 4 px 24 px rgba(45, 45, 45, 0.15));
@@ -1516,3 +1542,5 @@ filter: drop-shadow(0px 4px 24px rgba(45, 45, 45, 0.15));
 					margin-top: 24%;
 				}
 			}
+
+	/*-----Carousel
