@@ -731,7 +731,6 @@ img {
 
 	background-color: var(--ccrm);
 	color: var(--rich-black);
-	cursor: url("images/coming-soon.png"), auto;
 }
 
 #ccrm a {
@@ -794,6 +793,7 @@ img {
 #video {
 	width: 100%;
 	grid-column: 1/span 12;
+	cursor: url("images/coming-soon.png"), auto;
 }
 
 
