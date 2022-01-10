@@ -526,16 +526,16 @@ margin-bottom: 32px;
 
 .tide-video {
 	grid-column: 3/span 8;
-	grid-row: 4/span 8;
-	height: 615px;
+	grid-row: 2/span 8;
+	height: 100%;
 	z-index: 90;
 	filter: drop-shadow(0px 4px 24px rgba(45, 45, 45, 0.15));
-border-radius: 4px;
+border-radius: 4px 4px 0px 0px;
 background: var(--rich-black);
 }
 
 .tide-video iframe {
-	border-radius: 4px;
+	border-radius: 4px 4px 0px 0px;
 	width: 100%;
 	height: 100%;
 }
@@ -749,7 +749,7 @@ img {
 #tide-hero{
 
 	background-color: var(--tide);
-	margin-bottom: 150px;
+	/* margin-bottom: 150px; */
 }
 
 #type-index {
@@ -1152,8 +1152,8 @@ filter: drop-shadow(0px 4px 24px rgba(45, 45, 45, 0.15));
 
 	.tide-video {
 		grid-column: 2/span 10;
-		grid-row: 6/span 3;
-		height: 400px;
+		grid-row: 2/span 8;
+		height: 100%;
 		z-index:90;
 		filter: drop-shadow(0 px 4 px 24 px rgba(45, 45, 45, 0.15));
 		border-radius: 4 px ;
@@ -1172,10 +1172,10 @@ filter: drop-shadow(0px 4px 24px rgba(45, 45, 45, 0.15));
 	}
 
 	.tide-video {
-		grid-column: 2/span 10;
-    grid-row: 1/span 3;
-    margin-top: 5%;
-    height: 360;
+		grid-column: 4/span 6;
+    grid-row: 2/span 6;
+    /* margin-top: 5%; */
+    height: 100%;
     z-index: 90;
     filter: drop-shadow(0 px 4 px 24 px rgba(45, 45, 45, 0.15));
     border-radius: 4 px;
