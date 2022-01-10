@@ -1353,6 +1353,13 @@ filter: drop-shadow(0px 4px 24px rgba(45, 45, 45, 0.15));
 
 @media screen and (max-width:768px) {
 
+	.figma-link {
+		grid-column: 2/span 10;
+		margin-bottom: 10%;
+		height: 232px;
+
+	}
+
 	.spacer {
 		display: none;
 	}
