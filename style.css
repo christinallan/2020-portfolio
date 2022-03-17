@@ -89,6 +89,7 @@ body {
   --interventions: #1D3243;
   --jfkt4: #FEB842;
   --type-chairs: #A1CAD8;
+  --block: #FF7C55;
 }
 
 #copyright {
@@ -700,13 +701,13 @@ img {
 	padding-bottom: 0.3rem;
 	transition: 0.1s ease-in;
 	line-height: 0;
-	box-shadow: inset 0 -0.2rem 0 0 var(--video);
+	box-shadow: inset 0 -0.2rem 0 0 var(--block);
 
 }
 
 
 #intro a:hover {
-	box-shadow: inset 0 -0.7rem 0 0 var(--video);
+	box-shadow: inset 0 -0.7rem 0 0 var(--block);
 	transition: 0.1s ease-in;
 
 }
