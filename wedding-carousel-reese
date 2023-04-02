@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+
+    <style>
+        body {
+            background-color: #F6F4EE;
+            overflow: hidden;
+        }
+        .carousel {
+            position: relative;
+/*             width: 600px; */
+            height: 100%;
+/*             overflow: hidden; */
+            background: #F6F4EE;
+        }
+        .carousel img {
+            position: absolute;
+            width: 100%;
+/*             height: 100%; */
+            object-fit: cover;
+            opacity: 1;
+            scale: 97%;
+            transition: scale ease-in-out 0.3s, translate ease-in-out 0.3s;
+        }
+        .carousel img.active {
+            opacity: 1;
+            z-index: 100;
+            scale: 100%;
+        }
+        
+        .button-group {
+            margin: auto;
+            width: fit-content;
+            padding-top: 100%;
+        }
+        
+        button {
+            border-width: 0;
+            font-size: 32px;
+            background-color: rgba(0,0,0,0);
+            color: #2d2d2d;
+        }
+        
+        button:hover {
+            color: #F16335;
+        }
+        
+        
+    </style>
+
+
+</head>
+<body>
+    <div class="carousel">
+        <img src="images/reesesversion/image1.png" alt="Image 1" class=>
+        <img src="images/reesesversion/image2.png" alt="Image 2" >
+        <img src="images/reesesversion/image3.png" alt="Image 3" >
+      <img src="images/reesesversion/image4.png" alt="Image 1" >
+        <img src="images/reesesversion/image5.png" alt="Image 2" >
+        <img src="images/reesesversion/image6.png" alt="Image 3" >
+      <img src="images/reesesversion/image7.png" alt="Image 1" >
+        <img src="images/reesesversion/image8.png" alt="Image 2" >
+        <img src="images/reesesversion/image9.png" alt="Image 3" >
+      <img src="images/reesesversion/image10.png" alt="Image 1" >
+        <img src="images/reesesversion/image11.png" alt="Image 2" >
+        <img src="images/reesesversion/image12.png" alt="Image 3" >
+      <img src="images/reesesversion/image13.png" alt="Image 1" >
+    
+    </div>
+    <div class="button-group">
+            <button id="prev">←</button>
+            <button id="next">→</button>
+    </div>
+
+
+
+
+
+
+
+    <script>
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
+
+const carousel = document.querySelector('.carousel');
+const images = Array.from(carousel.querySelectorAll('img'));
+shuffleArray(images);
+
+images.forEach((img, index) => {
+    carousel.appendChild(img);
+    if (index === 0) {
+        img.classList.add('active');
+    }
+});
+
+const prevButton = document.getElementById('prev');
+const nextButton = document.getElementById('next');
+
+let currentIndex = 0;
+
+function updateCarousel(newIndex) {
+    images[currentIndex].classList.remove('active');
+    newIndex = (newIndex + images.length) % images.length;
+    images[newIndex].classList.add('active');
+    currentIndex = newIndex;
+}
+
+prevButton.addEventListener('click', () => {
+    updateCarousel(currentIndex - 1);
+});
+
+nextButton.addEventListener('click', () => {
+    updateCarousel(currentIndex + 1);
+});
+
+
+</script>
+
+</body>
+</html>
