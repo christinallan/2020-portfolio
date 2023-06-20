@@ -256,6 +256,10 @@ body {
 	color: var(--rich-black);
 }
 
+#blueprint h2 h3 {
+		color: var(--rich-black);
+}
+
 
 
 /*--------NAVIGATION--------*/
