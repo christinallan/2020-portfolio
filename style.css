@@ -256,8 +256,12 @@ body {
 	color: var(--rich-black);
 }
 
-#blueprint h2 h3 {
-		color: var(--rich-black);
+#blueprint h2 {
+	color: var(--rich-black);
+}
+
+#blueprint h3 {
+	color: var(--rich-black);
 }
 
 
@@ -749,11 +753,11 @@ img {
 #blueprint{
 	background-color: var(--blueprint);
 	color: var(--rich-black);
+	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🔜</text></svg>") 16 0,auto; 
 }
 
 #blueprint a {
 	color: var(--rich-black);
-	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🔜</text></svg>") 16 0,auto; 
 }
 
 #configurator{
