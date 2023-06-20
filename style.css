@@ -135,6 +135,34 @@ body {
 }
 
 /*--------LINK PAGE COLORS--------*/
+#blueprint-color a {
+	text-decoration: none;
+	color: var(--rich-black);
+	padding-bottom: 0.2rem;
+	box-shadow: inset 0 -0.2rem 0 0 var(--blueprint);
+	transition: 0.1s ease-in;
+}
+
+
+#blueprint-color a:hover{
+	box-shadow: inset 0 -0.7rem 0 0 var(--blueprint);
+	transition: 0.1s ease-in;
+}
+
+#configurator-color a {
+	text-decoration: none;
+	color: var(--rich-black);
+	padding-bottom: 0.2rem;
+	box-shadow: inset 0 -0.2rem 0 0 var(--block);
+	transition: 0.1s ease-in;
+}
+
+
+#configurator-color a:hover{
+	box-shadow: inset 0 -0.7rem 0 0 var(--block);
+	transition: 0.1s ease-in;
+}
+
 #ccrm-color a {
 	text-decoration: none;
 	color: var(--rich-black);
@@ -712,6 +740,16 @@ img {
 	box-shadow: inset 0 -0.7rem 0 0 var(--block);
 	transition: 0.1s ease-in;
 
+}
+
+#blueprint{
+
+	background-color: var(--blueprint);
+}
+
+#configurator{
+
+	background-color: var(--block);
 }
 
 #t4{
