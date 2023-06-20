@@ -743,12 +743,15 @@ img {
 }
 
 #blueprint{
-
 	background-color: var(--blueprint);
+	color: var(--rich-black);
+}
+
+#blueprint a {
+	color: var(--rich-black);
 }
 
 #configurator{
-
 	background-color: var(--block);
 }
 
