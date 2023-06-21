@@ -91,6 +91,7 @@ body {
   --type-chairs: #A1CAD8;
   --block: #FF7C55;
   --blueprint: #E9E6DD;
+  --configurator: #FCEEE8;
 }
 
 
@@ -159,7 +160,7 @@ body {
 
 
 #configurator-color a:hover{
-	box-shadow: inset 0 -0.7rem 0 0 var(--block);
+	box-shadow: inset 0 -0.7rem 0 0 var(--configurator);
 	transition: 0.1s ease-in;
 }
 
@@ -753,7 +754,6 @@ img {
 #blueprint{
 	background-color: var(--blueprint);
 	color: var(--rich-black);
-	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🔜</text></svg>") 16 0,auto; 
 }
 
 #blueprint a {
@@ -762,7 +762,12 @@ img {
 
 #configurator{
 	background-color: var(--block);
-	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🔜</text></svg>") 16 0,auto; 
+	
+}
+
+#configurator-light{
+	background-color: var(--configurator);
+	
 }
 
 #t4{
@@ -1025,6 +1030,33 @@ filter: drop-shadow(0px 4px 24px rgba(45, 45, 45, 0.15));
 }
 #hero-blueprint-left {
 	grid-column: 2/span 3;
+	grid-row: 3 / span 2;
+	margin-top: 10%;
+	width: 100%;
+	z-index: 2;
+
+}
+
+/*--------------------Configurator*/
+#hero-configurator {
+	grid-column: 3/span 8;
+	grid-row: 1/span 4;
+	width: 100%;
+	z-index: 3;
+	margin-top: 5%;
+
+}
+
+#hero-configurator-right {
+	grid-column: 10/span 3;
+	grid-row: 3 / span 2;
+	width: 100%;
+	margin-top: 5%;
+	z-index: 2;
+
+}
+#hero-configurator-left {
+	grid-column: 1/span 3;
 	grid-row: 3 / span 2;
 	margin-top: 10%;
 	width: 100%;
@@ -1588,6 +1620,29 @@ filter: drop-shadow(0px 4px 24px rgba(45, 45, 45, 0.15));
 			}
 
 			#hero-blueprint-left {
+				display: none
+			
+			}
+
+
+			/*---------Configurator MOBILE---------*/
+
+
+
+			#hero-configurator {
+				grid-column: 1/span 12;
+				grid-row: 1/span 4;
+				width: 100%;
+				z-index: 3;
+				margin-top: 25%;
+			
+			}
+			
+			#hero-configurator-right {
+				display: none;
+			}
+
+			#hero-configurator-left {
 				display: none
 			
 			}
