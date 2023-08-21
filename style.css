@@ -92,6 +92,7 @@ body {
   --block: #FF7C55;
   --blueprint: #E9E6DD;
   --configurator: #FCEEE8;
+  --arrived: #4CBBCA;
 }
 
 
@@ -161,6 +162,20 @@ body {
 
 #configurator-color a:hover{
 	box-shadow: inset 0 -0.7rem 0 0 var(--configurator);
+	transition: 0.1s ease-in;
+}
+
+#arrived-color a {
+	text-decoration: none;
+	color: var(--rich-black);
+	padding-bottom: 0.2rem;
+	box-shadow: inset 0 -0.2rem 0 0 var(--arrived);
+	transition: 0.1s ease-in;
+}
+
+
+#arrived-color a:hover{
+	box-shadow: inset 0 -0.7rem 0 0 var(--arrived);
 	transition: 0.1s ease-in;
 }
 
